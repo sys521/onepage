@@ -1,0 +1,438 @@
+* {
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 314258 */
+    src: url('//at.alicdn.com/t/font_4glu7146zjwi2j4i.eot');
+    src: url('//at.alicdn.com/t/font_4glu7146zjwi2j4i.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_4glu7146zjwi2j4i.woff') format('woff'),
+    url('//at.alicdn.com/t/font_4glu7146zjwi2j4i.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_4glu7146zjwi2j4i.svg#iconfont') format('svg');
+}
+
+html,body{
+    height:100%;
+}
+.wrap {
+    height:100%;
+}
+.clear {
+    clear:both;
+}
+#header{
+    background:url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
+    background-position:center center;
+    background-size:cover;
+    margin-bottom:20px;
+}
+.nva {
+    width:100%;
+    max-height:70px;
+    background-color:#333;
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+.nva-logo {
+    display:inline-block;
+    float:left;
+    font-size:24px;
+    color:#fed136;
+    line-height:70px;
+    margin-left:30px;
+
+}
+
+.nva-menu {
+    float:right;
+    padding-right:40px;
+}
+.nva-menu>li {
+    float:left;
+    list-style:none;
+}
+.nva-menu span {
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+    line-height:70px;
+    padding:0 20px;
+    text-transform:uppercase;
+}
+.header-content{
+    padding-top:300px;
+    padding-bottom:200px;
+    text-align:center;
+}
+.header-content>h2{
+    font:40px "Droid Serif","Helvetica Neue",Hel
+    vetica,Arial,sans-serif;
+    color:#fff;
+}
+.header-content>h1 {
+    font:75px Montserrat,"Helvetica Neue",Helvetica,Arial,sans-se;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:50px;
+}
+.tellme {
+    font:18px Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:700;
+    display:inline-block;
+    padding:20px 20px;
+    background:#fec503;
+    border-radius:3%;
+    color:#fff;
+}
+#serviece {
+    margin:18.5px;
+    text-align:center;
+    text-transform:uppercase;
+    padding:150px 0;
+}
+.title {
+    margin-bottom:15px;
+    font-weight:700;
+    font:40px "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+
+}
+.small {
+    font:16px "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top:20px;
+    margin-bottom:75px;
+    text-align:center;
+}
+
+#serviece li {
+    max-width:300px;
+    list-style:none;
+    display:inline-block;
+    text-align:center;
+    padding:0 15px;
+}
+#serviece :last-child{
+    margin-right:2.5%;
+}
+.serviece-1 span {
+    display:inline-block;
+    font:112px "iconfont";
+    color:#fed136;
+}
+.serviece-1 h5 {
+    font:18px Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:700;
+    margin:15px;
+}
+.serviece-1 p {
+    color:#777;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+#portfolio {
+    text-align:center;
+    background-color:#f7f7f7;
+    padding-top:150px;
+
+}
+
+.portfolio-content {
+    padding:0 100px;
+    margin:0 auto;
+}
+
+#portfolio li {
+    box-sizing:border-box;
+    max-width:33.333%;
+    padding:0 30px;
+    list-style:none;
+    float:left;
+    text-align:center;
+    margin-bottom:30px;
+}
+.po-img{
+    position:relative;
+
+}
+#portfolio img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    position:relative;
+}
+#portfolio .img-text {
+    padding:25px;
+    background-color:#fff;
+
+}
+#portfolio span{
+    font:40px "iconfont";
+    color:white;
+}
+.bg-yellow{
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    background:yellow;
+}
+#portfolio .po-img:hover img{
+    opacity:0.5;
+}
+#portfolio .po-img:hover .bg-yellow{
+    display:flex;
+    opacity:0.8;
+}
+#about {
+    padding:150px 0;
+    text-align:center;
+}
+
+#about li {
+    list-style:none;
+    position:relative;
+    padding-bottom:100px;
+}
+.about-img {
+    display:inline-block;
+    max-width:150px;
+    max-height:150px;
+    border:7px solid #f1f1f1;
+    border-radius:100%;
+    overflow: hidden;
+
+
+}
+.about-img img {
+    max-width:100%;
+    height:auto;
+}
+#about>li:nth-child(odd) .at-textct {
+    max-width:350px;
+    position:absolute;
+    top:0;
+    right:50%;
+    margin-right:88px;
+    text-align:right;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    z-index:-1;
+}
+#about>li:nth-child(even) .at-textct {
+    max-width:350px;
+    position:absolute;
+    text-align:left;
+    top:0;
+    left:50%;
+    margin-left:88px;
+    z-index:-1;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+
+}
+
+.at-textct p {
+    color:#777;
+    font-size:14px;
+    line-height:1.75
+}
+
+#about>li:after {
+    content:" ";
+    display:block;
+    position:absolute;
+    left:50%;
+    top:0;
+    border-left:2px solid #777;
+    height:100%;
+    z-index:-1;
+}
+#about>li:last-child {
+    padding:0;
+}
+.at-lastimg {
+    display:inline-block;
+    width:150px;
+    height:150px;
+    background:#fed136;
+    border:7px solid #f1f1f1;
+    border-radius:50%;
+    margin-bottom:-5px;
+    font:18px Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:700;
+}
+.at-lastimg p {
+    color:#fff;
+    line-height:150px;
+}
+#team {
+    padding:150px 0;
+    background-color:#f7f7f7;
+    text-align:center;
+}
+.tm-ct {
+    display:inline-block;
+    max-width:360px;
+    margin:0 61px;
+    list-style:none;
+}
+
+.tm-ct img {
+    display:inline-block;
+    border:7px solid white;
+    max-width:225px;
+    border-radius:50%;
+}
+.tm-ct span {
+    font:40px "iconfont";
+    margin:10px;
+}
+.tm-ct h5 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:700;
+    padding-top:25px;
+    font-size:18px;
+}
+.tm-ct h6{
+    font-size: 14px;
+    line-height: 1.75
+color:#777;
+    margin-bottom:10px;
+}
+
+.tm-ct-last {
+    font-size: 14px;
+    line-height: 1.75
+color:#777;
+    margin-bottom:10px;
+    margin-top:30px;
+}
+@media screen and (max-width:900px){
+
+    .menu:before {
+        display:inline-block;
+        content:"\e6be";
+        font:50px "iconfont";
+        color:#fed136;
+        line-height:70px;
+        position:absolute;
+        right:30px;
+        top:0;
+        cursor:pointer;
+    }
+    .nva-menu  {
+        position:absolute;
+        right:0;
+        top:70px;
+        margin:0;
+        padding:0;
+        display:block;
+    }
+    .nva-menu li {
+        float:none;
+    }
+    .nva-menu span {
+        width:100%;
+        line-height:50px;
+        font-size:18px;
+        background:#333;
+        border:1px #555 solid;
+        border-radius:4%;
+        display:none;
+    }
+    .menu:hover span {
+        display:block;
+    }
+
+}
+@media screen and (min-width:900px){
+    .menu:before {
+        display:none;
+
+    }
+}
+#last-logo {
+    margin:0 100px;
+    text-align:center;
+}
+.lt-lo {
+    padding:50px 30px;
+}
+#contact {
+    padding:150px 50px;
+    background:url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
+    background-color:#222;
+    background:cover;
+    color:white;
+    text-align:center;
+}
+#contact .small{
+    color:#777;
+}
+.last-form{
+    margin:0 auto;
+    text-align:center;
+    max-width:1140px;
+}
+.last-form {
+    max-width:1140px;
+    margin:0 auto;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0 30px;
+}
+.form-input{
+    width:48%;
+    float:left;
+}
+#contact input {
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+    padding:20px;
+    border:1px solid;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+.textarea {
+    width:48%;
+    float:right;
+}
+.text1 {
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+    height:211px;
+    border:1px solid;
+    border-radius:4px;
+}
+.send {
+    display:inline-block;
+    width:230px;
+    padding:20px 0px;
+    background:#fed136;
+    border:1px solid #fed136;
+    border-radius:4px;
+    color:#fff;
+    font-weight:700;
+}
+#footer{
+    padding:20px 20px;
+    text-align:center;
+}
+#footer span {
+    font:40px "iconfont";
+    vertical-align:middle;
+}
+.icon {
+    margin:0 100px;
+}
